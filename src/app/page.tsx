@@ -1,9 +1,91 @@
-import Image from "next/image";
+import ContactCard from "@/components/cards/common/ContactCard";
+import CompanyIntro from "@/components/cards/company-intoduction/CompanyIntro";
+import EmployeeCard from "@/components/cards/employees/EmployeeCard";
+import EmployeesCarousel from "@/components/carousels/EmployeesCarousel";
+import PartnersCarousel from "@/components/carousels/PartnersCarousel";
+import PrimaryTitle from "@/components/common/titles/PrimaryTitle";
+import FeatureCardsBox from "@/components/features/FeatureCardsBox";
+import Header from "@/components/layouts/Header";
+import Hero from "@/components/main/Hero";
+import OurProjects from "@/components/projects/OurProjects";
+import { Main } from "next/document";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
+    <main className="flex min-h-screen flex-col gap-12">
+
+      {/* Hero section */}
+      <Hero />
+
+      {/* Features section */}
+      <div className="flex flex-col gap-12 items-center pt-10">
+        {/* Title and paragraph */}
+        <div className="flex flex-col items-center gap-3">
+          <h2 className="">Presenting Our Features</h2>
+          <p className="text-[#DEDBDB] w-2/3 text-center text-sm">Recognizing the value of innovation and professionalism, we collaborate with top experts to make this a reality.</p>
+        </div>
+        {/* Features cards */}
+        <FeatureCardsBox />
+      </div>
+
+      {/* Contact us banner section */}
+      <div className="my-16">
+        <ContactCard />
+      </div>
+
+      {/* About our company section */}
+      <div className="my-10">
+        <CompanyIntro />
+      </div>
+
+      {/* Recent works section with carousel */}
+      <div className="">
+        <OurProjects />
+      </div>
+
+      {/* Employees section with carousel */}
+      <div className="flex flex-col items-center gap-16 my-16">
+        {/* Titles ans subtitles */}
+        <div className="flex flex-col gap-3 items-center">
+          <div><PrimaryTitle title="Active Employees" /></div>
+          <h3>Construction Done Right Every Time</h3>
+        </div>
+        {/* Carousel */}
+        <div className="flex items-center w-2/3">
+         <EmployeesCarousel />
+        </div>
+      </div>
+
+      {/* Our partners section */}
+      <div className="flex flex-col items-center gap-14 mt-16 mb-32">
+        <div><PrimaryTitle title="Our Partners" /></div>
+        <div><PartnersCarousel /></div>
+        <p className="text-cloud-2 font-kavivanar text-lg mt-6">We always work together with the best</p>
+      </div>
+    
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
         <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
@@ -107,7 +189,7 @@ export default function Home() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div>
+      </div> */}
     </main>
   );
 }
