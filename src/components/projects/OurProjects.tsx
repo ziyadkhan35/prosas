@@ -32,7 +32,7 @@ const OurProjects = () => {
         <div className='bg-cloud-1 h-[0.10rem] w-16'></div> 
       </div>
       {/* Slogan */}
-      <p className='md:text-xl font-shantell_sans italic md:tracking-wide me-2'>"{t('slogan')}"</p>
+      <p className='md:text-xl font-shantell_sans italic md:tracking-wide me-2'>{t('slogan')}</p>
       {/* Slider buttons */}
       <div className='flex gap-3 self-end me-16'>
         <button onClick={scrollPrev} className='p-3 text-2xl rounded-full bg-cloud-1 hover:scale-110 duration-300 text-primary'><MdKeyboardArrowLeft /></button>
