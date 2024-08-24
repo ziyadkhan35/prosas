@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
-export default function NotFoundPage() {
+const NotFoundPage = () =>  {
   const t = useTranslations("NotFoundPage")
   return (
     <div className='flex items-center justify-center min-h-screen'>
@@ -15,3 +15,5 @@ export default function NotFoundPage() {
     </div>
   );
 }
+
+export default NotFoundPage
