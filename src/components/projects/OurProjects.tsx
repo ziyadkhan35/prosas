@@ -19,7 +19,7 @@ const OurProjects = () => {
   }, [emblaApi])
 
   // Internatonalization
-  const t = useTranslations("OurProjects")
+  const t = useTranslations('OurProjects')
 
 
   return (
@@ -40,9 +40,9 @@ const OurProjects = () => {
       </div>
 
       {/* Project gallery with embla carousel*/}
-      <div className="embla absolute bottom-[-25%] sm:bottom-[-35%] overflow-hidden px-6">
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container flex gap-8">
+      <div className='embla absolute bottom-[-25%] sm:bottom-[-35%] overflow-hidden px-6'>
+        <div className='embla__viewport' ref={emblaRef}>
+          <div className='embla__container flex gap-8'>
             <Image className='rounded-xl object-cover embla__slide' src={'/projects/bilgah-beach-hotel.jpg'} width={400} height={300} alt='picture of project' />
             <Image className='rounded-xl object-cover embla__slide' src={'/projects/intourist-hotel-baku.jpg'} width={400} height={300} alt='picture of project' />
             <Image className='rounded-xl object-cover embla__slide' src={'/projects/mariott-hotel-boulevard.jpg'} width={400} height={300} alt='picture of project'/>
