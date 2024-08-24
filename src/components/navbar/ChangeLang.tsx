@@ -1,22 +1,31 @@
-import React from 'react'
-import { IoMdArrowDropdown } from 'react-icons/io'
+import { useLocale } from 'next-intl'
+import { useRouter } from 'next/navigation'
+import React, { ChangeEvent, useTransition } from 'react'
 
 const ChangeLang = () => {
+
+  // Internationalization settings
+  const [isPending, startTransition] = useTransition()
+  const router = useRouter()
+  const localActive = useLocale()
+
+  const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
+    const nextLocale = e.target.value
+    startTransition(() => {
+      router.replace(`/${nextLocale}`)
+    }) 
+  }
+
   return (
-    <div className='group'>
-       
-        <div className='flex py-3'>
-            <img src='/pngs/flags/uk.png' className='w-6' />
-            <IoMdArrowDropdown />
-        </div>
-
-        <div className='absolute invisible group-hover:visible'>
-            <img src='/pngs/flags/uk.png' className='w-6' />
-            <img src='/pngs/flags/ru.png' className='w-6' />
-            <img src='/pngs/flags/aze.png' className='w-6' />
-        </div>
-
-    </div>
+    <select
+     onChange={onSelectChange}
+     disabled={isPending} 
+     defaultValue={localActive}
+     className="text-cloud-1 bg-primary text-shadow-sm lg:text-lg p-1 rounded tracking-wide mt-1 capitalize" >
+      <option value="aze">AZE</option>
+      <option value="ru">RU</option>
+      <option value="en">EN</option>
+    </select>
   )
 }
 

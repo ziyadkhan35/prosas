@@ -1,22 +1,17 @@
-import { Karla, Kalam, Kameron, Kavivanar } from "next/font/google";
+import { Lora, Open_Sans, Shantell_Sans } from "next/font/google";
 
-export const karla = Karla({
+export const open_sans = Open_Sans({
     subsets: ['latin'],
-    weight: ['200', '300', '400', '500', '600', '700', '800'],
-    variable: '--font-karla', 
+    weight: ['300', '400', '500', '600', '700', '800'],
+    variable: '--font-open_sans', 
 })
-export const kalam = Kalam({
-    subsets: ['latin'],
-    weight: ['300', '400', '700'],
-    variable: '--font-kalam'
-})
-export const kameron = Kameron({
+export const lora = Lora({
     subsets: ['latin'],
     weight: ['400', '500', '600', '700'],
-    variable: '--font-kameron'
+    variable: '--font-lora'
 })
-export const kavivanar = Kavivanar({
+export const shantell_sans = Shantell_Sans({
     subsets: ['latin'],
-    weight: ['400'],
-    variable: '--font-kavivanar'
+    weight: ['300', '400', '500', '600', '700', '800'],
+    variable: '--font-shantell_sans'
 })

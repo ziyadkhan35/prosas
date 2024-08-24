@@ -5,6 +5,7 @@ import React from 'react'
 type SocialProps = {
   backgroundColor: string
   logo: React.ComponentType
+  link: string
 }
 
 // Tailwind dynamic classes
@@ -13,10 +14,10 @@ const type: any = {
   cloud: 'bg-cloud-1 text-primary'
 }
 
-const FilledSocialBtn = ({backgroundColor, logo: Logo}: SocialProps) => {
+const FilledSocialBtn = ({backgroundColor, logo: Logo, link }: SocialProps) => {
   return (
-    <Link href={'/'} className={`${type[backgroundColor]} p-3 rounded`}>
-        <div className='text-xl'><Logo /></div>
+    <Link href={`${link}`} className={`${type[backgroundColor]} p-2 lg:p-3 rounded`}>
+        <div className='lg:text-xl'><Logo /></div>
     </Link>
   )
 }

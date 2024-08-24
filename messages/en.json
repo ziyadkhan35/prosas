@@ -1,0 +1,81 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "NotFoundPage": {
+    "title": "Something went wrong", 
+    "button": "Go Home"
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "slogan": "LEAVE YOUR WORK TO THE PROFESSIONALS",
+    "paragraph": "At ProSAS LLC, we specialize in providing top-tier civil engineering solutions with a focus on fire protection and security camera systems. Our team of experts ensures that your projects are executed with precision, safety, and efficiency. Trust us to safeguard your assets and deliver results that exceed your expectations.",
+    "contact_us": "Contact Us"
+  },
+  "Features": {
+    "title": "Presenting Our Features",
+    "subtitle": "Explore the key elements that define our excellence and innovation.",
+    "card1_title": "Harnessing Top Talent",
+    "card1_text" : "Recognizing the value of innovation and professionalism, we collaborate with top experts to make this a reality. Our team is committed to pushing the boundaries of what is possible.",
+    "card2_title" : "Advanced Technology",
+    "card2_text": "We leverage the latest technologies to deliver solutions that meet the highest standards of excellence. Our forward-thinking approach ensures that we stay ahead of the curve.",
+    "card3_title" : "Eco-Friendly Approaches",
+    "card3_text": "Our commitment to sustainability drives us to incorporate eco-friendly practices in all our projects. We strive to minimize our environmental impact while maximizing efficiency.",
+    "card4_title" : "Client-Centric Focus",
+    "card4_text": "We prioritize our clients' needs by offering customized solutions that address their specific challenges. Our client-centric approach ensures satisfaction and long-term partnerships.",
+    "card5_title" : "Safety First",
+    "card5_text": "Safety is our top priority. We adhere to rigorous safety protocols to protect our team, our clients, and the community. Our dedication to safety underpins everything we do.",
+    "card6_title" : "Quality Assurance",
+    "card6_text": "We maintain the highest standards of quality in every project. Our meticulous attention to detail and commitment to excellence guarantee exceptional outcomes every time."
+  },
+  "ContactUsBanner": {
+    "title": "Engineering Excellence, Trust Built.",
+    "paragraph": "Partner with us for innovative solutions, exceptional quality, and a commitment to your success.",
+    "contact_us": "Contact with us"
+  },
+  "CompanyIntro": {
+    "header": "Welcome our company",
+    "title": "About Us",
+    "par1_title": "Company overview",
+    "par1_text": "ProSAS LLC is a leading company that provides installation, maintenance and repair of fire protection systems and equipment, providing innovative and sustainable solutions for a better tomorrow. Our mission is to exceed customer expectations with exceptional service and quality.",
+    "par2_title": "Leadership Team",
+    "par2_text": "Meet our visionary leaders driving our success",
+    "par3_title": "Detailed Service Offerings",
+    "par3_text": "Fire Alarm Systems, Security Systems, BMS",
+    "par4_title": "Industries Served",
+    "par4_text": "Residential, Commercial, Industrial, Institutional, Government",
+    "par5_text": "Orkhan Mursalov, Project Implementation Manager, Fire Alarm and Security Systems Site Enginer: Project manager with over 15 years of experience in managing complex facilities and ensuring flawless execution of projects.",
+    "par6_text": "Iman Mansurov, Project Manager, BMS Responsible Engineer, lead engineer for Fire Alarm and Public Announcement Systems: Ensures project management, ensuring that each project is delivered on time and meets all technical and safety requirements",
+    "project_done": "Project Done" 
+  },
+  "OurProjects": {
+    "title": "Recent Works",
+    "slogan": "ProSAS Solutions: Building the Future, One Project at a Time."
+  },
+  "Employees": {
+    "title": "Active Employees",
+    "subtitle": "Construction Done Right Every Time"
+  },
+  "Partners": {
+    "title": "Our Partners",
+    "slogan": "Success with trusted partners"
+  },
+  "Footer": {
+    "title": "Contact Us",
+    "information": "Information",
+    "quick_links": "Quick Links",
+    "write_to_us": "Write to Us",
+    "fullname": "Name and Surname",
+    "phone_number": "Phone number",
+    "email": "Email",
+    "application_title": "Your application",
+    "application_placeholder": "I have a job offer for you.",
+    "send": "Send",
+    "copyright": "© ProSas MMC - All Rights Reserved"
+  }
+}

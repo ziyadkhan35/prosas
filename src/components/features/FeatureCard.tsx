@@ -14,13 +14,12 @@ const FeatureCard = ({
         cloud: 'bg-cloud-1 text-night-1'
     }
   return (
-    <div>
         <div
-            className={`${featureType[type]} flex flex-col items-center gap-4 rounded-lg px-4 py-6 w-96`}
+            className={`${featureType[type]} flex flex-col items-center gap-4 rounded-lg px-4 py-6 w-full h-full`}
         >
             {/* Feature icon */}
             <img
-                className='w-12'
+                className='w-8 lg:w-12'
                 src={`/pngs/features-cards/${icon}`} 
             />
             <div className='flex flex-col items-center gap-3'>
@@ -30,7 +29,6 @@ const FeatureCard = ({
                 <p className='text-center text-sm'>{text}</p>
             </div> 
         </div>
-    </div>
   )
 }
 

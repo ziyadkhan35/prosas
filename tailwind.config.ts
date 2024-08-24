@@ -24,11 +24,19 @@ const config: Config = {
         }
       },
       fontFamily: {
-        karla: ['var(--font-karla)'],
-        kalam: ['var(--font-kalam)'],
-        kameron: ['var(--font-kameron)'],
-        kavivanar: ['var(--font-kavivanar)'],
-      }
+        open_sans: ['var(--font-open_sans)'],
+        lora: ['var(--font-lora)'],
+        shantell_sans: ['var(--font-shantell_sans)'],
+      },
+      keyframes: {
+        spin: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+      animation: {
+        spin: 'spin 1s linear infinite',
+      },
     },
   },
   plugins: [],

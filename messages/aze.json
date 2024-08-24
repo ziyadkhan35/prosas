@@ -1,0 +1,81 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "NotFoundPage": {
+    "title": "Axtardığınız səhifə mövcud deyil", 
+    "button": "Əsas səhifə"
+  },
+  "Navigation": {
+    "home": "Əsas Səhifə",
+    "about": "Haqqımızda",
+    "projects": "Layihələr",
+    "contact": "Əlaqə"
+  },
+  "Hero": {
+    "slogan": "İŞİNİZİ peşəkarlara həvalə edin",
+    "paragraph": "ProSAS MMC olaraq, yanğından mühafizə sistemlərinin və vasitələrinin quraşdırılması, texniki xidməti və təmirini təklif edirik. Təcrübəli komandamız layihələrinizin dəqiqlik, təhlükəsizlik və keyfiyyətlə həyata keçirilməsini təmin edir. Gözləntilərinizi aşan nəticələr əldə etmək üçün bizə etibar edin.",
+    "contact_us": "Əlaqə"
+  },
+  "Features": {
+    "title": "Xüsusiyyətlərimizi təqdim edirik",
+    "subtitle": "Mükəmməlliyimizi və yeniliklərimizi müəyyən edən əsas elementləri kəşf edin.",
+    "card1_title": "Peşəkar komanda",
+    "card1_text": "Yenilik və peşəkarlığın dəyərini tanıyaraq, bu gerçəkliyi həyata keçirmək üçün ən yaxşı mütəxəssislərlə əməkdaşlıq edirik. Komandamız mümkün olanın sərhədlərini genişləndirməyə sadiqdir.",
+    "card2_title": "Müasir Texnologiya",
+    "card2_text": "Biz ən yüksək keyfiyyət standartlarına cavab verən həllər təqdim etmək üçün ən son texnologiyalardan istifadə edirik. İrəli düşünən yanaşmamız bizi daim önə çıxarır.",
+    "card3_title": "Ekoloji Təmiz Yanaşmalar",
+    "card3_text": "Dayanıqlılığa olan öhdəliyimiz bizi bütün layihələrimizdə ekoloji təmiz təcrübələri tətbiq etməyə vadar edir. Ətraf mühitə təsirimizi minimuma endirərkən səmərəliliyi maksimuma çatdırmağa çalışırıq.",
+    "card4_title": "Müştəri Mərkəzli Yanaşma",
+    "card4_text": "Müştərilərimizin ehtiyaclarını ön planda tutaraq, onların xüsusi çətinliklərinə cavab verən fərdi həllər təklif edirik. Müştəri mərkəzli yanaşmamız məmnuniyyət və uzunmüddətli tərəfdaşlığı təmin edir.",
+    "card5_title": "Təhlükəsizlik Birinci Yerdədir",
+    "card5_text": "Təhlükəsizlik bizim üçün ən yüksək prioritetdir. Komandamızı, müştərilərimizi və cəmiyyəti qorumaq üçün ciddi təhlükəsizlik protokollarına riayət edirik. Təhlükəsizlik öhdəliyimiz hər şeyin təməlindədir.",
+    "card6_title": "Keyfiyyət Təminatı",
+    "card6_text": "Hər layihədə ən yüksək keyfiyyət standartlarını qoruyuruq. Təfərrüatlara diqqətimiz və mükəmməlliyə sadiqliyimiz hər dəfə istisna nəticələrə zəmanət verir."
+  },
+  "ContactUsBanner": {
+    "title": "İşinizi Bizə Etibar Edin",
+    "paragraph": "Qabaqcıl mühəndislik, yüksək keyfiyyət və layihənizin uğuru üçün bizimlə əməkdaşlıq edin.",
+    "contact_us": "Bizimlə əlaqə"
+  },
+  "CompanyIntro": {
+    "header": "Şirkətimizə xoş gəlmisiniz",
+    "title": "Haqqımızda",
+    "par1_title": "Şirkətə ümumi baxış:  ",
+    "par1_text": "ProSAS MMC yanğından mühafizə sistemlərinin və vasitələrinin quraşdırılması, texniki xidməti və təmirini həyata keçirən, daha yaxşı sabah üçün innovativ və davamlı həllər təqdim edən aparıcı şirkətdir. Missiyamız müstəsna xidmət və keyfiyyətlə müştərilərin gözləntilərini aşmaqdır.",
+    "par2_title": "Rəhbərlik",
+    "par2_text": "Uğurlarımızı idarə edən uzaqgörən liderlərimizlə tanış olun",
+    "par3_title": "Xidmətlərimiz",
+    "par3_text": "Yanğından mühafizə sistemləri, Təhlükəsizlik kameraları, BMS",
+    "par4_title": "Xidmət olunan sahələr",
+    "par4_text": "Məişət, Ticarət obyektləri, Sənaye, Səhiyyə ocaqları, Dövlət binaları",
+    "par5_text": "Orxan Mürsəlov, Layihə Meneceri, Yanğından Mühafizə və Təhlükəsizlik Sistemləri Mühəndisi: Mürəkkəb qurğuların idarə edilməsi və layihələrin qüsursuz icrasının təmin edilməsində 15 ildən artıq təcrübəyə malik layihə meneceri.",
+    "par6_text": "İman Mənsurov, Layihə Meneceri, BMS Məsul Mühəndis, Yanğından Mühafizə Sistemləri üzrə aparıcı mühəndis: Layihənin idarə edilməsini təmin edir, hər bir layihənin vaxtında çatdırılmasını və bütün texniki və təhlükəsizlik tələblərinə əməl edilməsini təmin edir.",
+    "project_done": "Bitirilən layihə" 
+  },
+  "OurProjects": {
+    "title": "Son İşlər",
+    "slogan": "Binalarınızın təhlükəsizliyini ProSAS-a həvalə edin."
+  },
+  "Employees": {
+    "title": "İşçi heyəti",
+    "subtitle": "Peşəkar komandamız sizin xidmətinizdədir"
+  },
+  "Partners": {
+    "title": "Partnyorlarımız",
+    "slogan": "Uğura etibarlı tərəfdaşlarla"
+  },
+  "Footer": {
+    "title": "Bizimlə əlaqə",
+    "information": "Məlumat",
+    "quick_links": "Tez keçidlər",
+    "write_to_us": "Bizə yazın",
+    "fullname": "Ad və Soyad",
+    "phone_number": "Telefon nömrəsi",
+    "email": "Email",
+    "application_title": "Müraciətiniz",
+    "application_placeholder": "Sizə iş təklifim var.",
+    "send": "Göndər",
+    "copyright": "© ProSas MMC - Bütün Hüquqlar Qorunur"
+  }
+}

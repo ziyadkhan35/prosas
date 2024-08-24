@@ -1,19 +1,15 @@
-'use client'
 import Image from 'next/image'
 import React from 'react'
 import background from '/public/background.jpg'
-import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+import HeroCarousel from '../carousels/HeroCarousel'
+import { useTranslations } from 'next-intl'
  
 
 const Hero = () => {
-
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()])
-  // Images' name of carousel
-  const carousel_images = ['hero1', 'hero2', 'hero3', 'hero4']
+  const t = useTranslations('Hero')
 
   return (
-    <div className='relative flex items-center justify-center w-full h-screen top-0 left-0'>
+    <div className='relative flex items-center justify-center w-full h-screen top-0 left-0 object-cover'>
       {/* Image of background */}
       <Image
         className='-z-10'
@@ -23,69 +19,25 @@ const Hero = () => {
         quality={100}
         fill
         sizes="100vw"
-        objectFit='cover'
         priority
       />
                                               
       {/* Banner with slider for main page */}
-      <div className='flex w-9/12 mt-6'>
-        
-        {/* Image of banner slide */}
-        <div className='basis-2/3 overflow-hidden relative embla' ref={emblaRef}>
-          <div className='flex embla__container'>
-            <Image
-              className='rounded-s embla__slide basis-full flex-none'
-              src={'/hero-carousel/hero1.jpg'}
-              objectFit='cover'
-              quality={100}
-              width={100}
-              height={100}
-              sizes="100vw"
-              alt='image of slide'
-            />
-            <Image
-              className='rounded-s embla__slide flex-none basis-full'
-              src={'/hero-carousel/hero2.jpg'}
-              objectFit='cover'
-              quality={100}
-              width={100}
-              height={100}
-              sizes="100vw"
-              alt='image of slide'
-            />
-            <Image
-              className='rounded-s flex-none basis-full'
-              src={'/hero-carousel/hero3.jpg'}
-              objectFit='cover'
-              quality={100}
-              width={100}
-              height={100}
-              sizes="100vw"
-              alt='image of slide'
-            />
-            <Image
-              className='rounded-s embla__slide basis-full flex-none'
-              src={'/hero-carousel/hero4.jpg'}
-              objectFit='cover'
-              quality={100}
-              width={100}
-              height={100}
-              sizes="100vw"
-              alt='image of slide'
-            />
-          </div>
-        </div>
+      <div className='flex flex-col lg:flex-row max-h-screen w-11/12 xl:w-9/12 lg:mt-6'>
+      
+        {/* Carousel */}
+        <HeroCarousel />
 
         {/* Text of banner slide */}
-        <div className='basis-1/3 flex flex-col justify-between px-6 py-10 rounded-e bg-[rgba(65,165,149,0.51)]'>
+        <div className='lg:basis-1/3 flex flex-col justify-between px-6 py-5 kg:py-10 rounded-e bg-[rgba(65,165,149,0.51)]'>
           {/* Title and paragraph */}
-          <div className='flex flex-col gap-8'>
-            <h4 className='font-kameron font-[600] text-3xl tracking-wide'>LEAVE YOUR WORK TO THE PROFESSIONALS</h4>
-            <p className='text-cloud-2 font-kameron'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, consequatur. Expedita</p>
+          <div className='flex flex-col gap-3 lg:gap-6 font-lora'>
+            <h4 className='font-[600] text-xl md:text-2xl lg:text-3xl tracking-wide uppercase'>{t('slogan')}</h4>
+            <p className='text-cloud-2 text-sm lg:text-base'>{t('paragraph')}</p>
           </div>
           {/* Contact button and slider dots */}
-          <div className='flex'>
-            <button className='rounded bg-primary py-2 px-4 font-[600] hover:bg-cloud-1 hover:text-primary duration-150'>Contact us</button>
+          <div className='flex mt-8'>
+            <button className='rounded bg-primary py-2 px-4 font-[600] hover:bg-cloud-1 hover:text-primary duration-150 capitalize'>{t('contact_us')}</button>
           </div>
         </div>  
 
