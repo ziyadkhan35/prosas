@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { FC } from 'react';
  
- const NotFound: FC = () => {
+ const NotFound = () => {
   return (
     <html lang="en">
       <body>
