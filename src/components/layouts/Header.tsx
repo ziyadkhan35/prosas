@@ -46,8 +46,8 @@ const Header = () => {
         <Image
           src="/logo.png"
           alt="ProSAS Logo"
-          width={60}
-          height={60}
+          width={50}
+          height={50}
           priority
         />
       </div>
@@ -78,7 +78,7 @@ const Header = () => {
           <NavLink text={t('home')} link='/' />
           <NavLink text={t('about')} link='#about' />
           <MobileSlctLink />
-          <NavLink text={t('contact')} link='footer' />
+          <NavLink text={t('contact')} link='#footer' />
           {/* Change language button */}
           <ChangeLang />
         </div>

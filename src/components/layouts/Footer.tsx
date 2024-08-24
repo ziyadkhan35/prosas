@@ -20,7 +20,7 @@ const Footer = () => {
         {/* Title and logo */}
         <div className='flex justify-between'>
             {/* Title */}
-            <h2 className='mb-6'>{t('title')}</h2>
+            <h2 className='mb-6 mt-2'>{t('title')}</h2>
             {/* Logo */}
             <Image src={'/logo.png'} width={45} height={45} alt='logo' />
         </div>

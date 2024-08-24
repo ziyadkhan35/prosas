@@ -38,7 +38,7 @@ export default function Home() {
       </div>
 
       {/* Our partners section */}
-      <div id="partners">
+      <div className="mb-16" id="partners">
         <Partners />
       </div>
     

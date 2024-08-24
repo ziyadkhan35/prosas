@@ -43,11 +43,11 @@ const EmblaContanierEmp = () => {
                 <div className='flex flex-col'>
                     {/* Image of employee */}
                     <div className='h-80 relative'>
-                        <Image className='rounded-t-xl object-cover' src={employee.picture} fill alt='Picture of employee' />
+                        <Image className='rounded-t lg:rounded-t-xl object-cover' src={employee.picture} fill alt='Picture of employee' />
                     </div>
 
                     {/* Employee details */}
-                    <div className='flex flex-col items-center py-4 lg:py-8 gap-5 lg:gap-10 bg-cloud-1 rounded-b-xl'>
+                    <div className='flex flex-col items-center py-4 lg:py-8 gap-5 lg:gap-10 bg-cloud-1 rounded-b lg:rounded-b-xl'>
                         {/* Social media buttons */}
                         <div className='flex gap-4'>
                             <FilledSocialBtn backgroundColor='primary' logo={IoLogoLinkedin} link={employee.socialMedia.linkedin} />

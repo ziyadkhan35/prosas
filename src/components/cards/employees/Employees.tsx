@@ -12,7 +12,7 @@ const Employees = () => {
         {/* Titles ans subtitles */}
         <div className="flex flex-col gap-3 items-center text-center">
           <div><PrimaryTitle title={t('title')} /></div>
-          <h4 className='text-base md:text-lg px-2'>{t('subtitle')}</h4>
+          <h2 className='px-2'>{t('subtitle')}</h2>
         </div>
         {/* Carousel */}
         <div className="flex items-center w-5/6 xl:w-2/3 ">
