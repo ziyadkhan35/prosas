@@ -1,7 +1,8 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { FC } from 'react';
 
-const NotFoundPage = () =>  {
+const NotFoundPage: FC = () =>  {
   const t = useTranslations("NotFoundPage")
   return (
     <div className='flex items-center justify-center min-h-screen'>
