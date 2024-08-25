@@ -3,6 +3,7 @@ import React from 'react'
 import background from '/public/background.jpg'
 import HeroCarousel from '../carousels/HeroCarousel'
 import { useTranslations } from 'next-intl'
+import Link from 'next/link'
  
 
 const Hero = () => {
@@ -37,7 +38,7 @@ const Hero = () => {
           </div>
           {/* Contact button and slider dots */}
           <div className='flex mt-8'>
-            <button className='rounded bg-primary py-2 px-4 font-[600] hover:bg-cloud-1 hover:text-primary duration-150 capitalize'>{t('contact_us')}</button>
+            <Link href={'tel:+994503308330'} className='rounded bg-primary py-2 px-4 font-[600] sm:hover:bg-cloud-1 sm:hover:text-primary active:bg-cloud-2  duration-150 capitalize'>{t('contact_us')}</Link>
           </div>
         </div>  
 

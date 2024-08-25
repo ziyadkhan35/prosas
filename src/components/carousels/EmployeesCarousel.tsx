@@ -24,9 +24,9 @@ const EmployeesCarousel = () => {
       </div>
         
       {/* Previous button */}
-      <button className='embla__prev absolute left-1 sm:left-5 top-1/2 -translate-y-1/2 drop-shadow-2xl hover:scale-110 duration-150 rounded-full bg-cloud-1 text-primary text-2xl p-3' onClick={scrollPrev}><MdKeyboardArrowLeft /></button>
+      <button className='embla__prev absolute left-1 sm:left-5 top-1/2 -translate-y-1/2 drop-shadow-2xl sm:hover:scale-110 active:bg-cloud-2 duration-150 rounded-full bg-cloud-1 text-primary text-2xl p-3' onClick={scrollPrev}><MdKeyboardArrowLeft /></button>
       {/* Next button */}
-      <button className='embla__next absolute right-1 sm:right-5 top-1/2 -translate-y-1/2 drop-shadow-2xl hover:scale-110 duration-150 rounded-full bg-cloud-1 text-primary text-2xl p-3' onClick={scrollNext}><MdKeyboardArrowRight /></button>
+      <button className='embla__next absolute right-1 sm:right-5 top-1/2 -translate-y-1/2 drop-shadow-2xl sm:hover:scale-110 active:bg-cloud-2 duration-150 rounded-full bg-cloud-1 text-primary text-2xl p-3' onClick={scrollNext}><MdKeyboardArrowRight /></button>
     </div>
   )
 }
