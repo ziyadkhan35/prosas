@@ -20,7 +20,8 @@ const FeatureCard = ({
             {/* Feature icon */}
             <img
                 className='w-8 lg:w-12'
-                src={`/pngs/features-cards/${icon}`} 
+                src={`/pngs/features-cards/${icon}`}
+                alt='feature-icon' 
             />
             <div className='flex flex-col items-center gap-3'>
                 {/* Feature name */}
