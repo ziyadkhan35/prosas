@@ -1,19 +1,20 @@
 import Image from 'next/image'
 import React from 'react'
 import IconAndText from '../common/with-icons/IconAndText'
-import { FaFacebook, FaLocationDot } from 'react-icons/fa6'
-import { IoIosMail, IoLogoWhatsapp } from 'react-icons/io'
+import { FaLocationDot } from 'react-icons/fa6'
+import { IoIosMail, IoLogoLinkedin } from 'react-icons/io'
 import { BsTelephoneFill } from 'react-icons/bs'
 import FilledSocialBtn from '../common/buttons/FilledSocialBtn'
-import { PiInstagramLogoFill } from 'react-icons/pi'
-import { MdKeyboardArrowRight } from 'react-icons/md'
+import { MdKeyboardArrowRight, MdLocalPhone } from 'react-icons/md'
 import Link from 'next/link'
 import CustomInput from '../common/inputs/CustomInput'
 import { useTranslations } from 'next-intl'
+import { GrMail } from 'react-icons/gr'
 
 const Footer = () => {
 
     const t = useTranslations('Footer')
+    const n = useTranslations('Navigation')
 
   return (
     <div className='flex flex-col gap-3 bg-primary py-5 lg:py-6 px-3 sm:px-5 md:px-10 xl:px-20' id='footer'>
@@ -41,9 +42,9 @@ const Footer = () => {
                 </div>
                 {/* Social media */}
                 <div className='flex gap-6'>
-                    <FilledSocialBtn backgroundColor='cloud' logo={PiInstagramLogoFill} link='/' />
-                    <FilledSocialBtn backgroundColor='cloud' logo={FaFacebook} link='/' />
-                    <FilledSocialBtn backgroundColor='cloud' logo={IoLogoWhatsapp} link='/' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/orkhanmursalov2505/' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={MdLocalPhone} link='tel:+994503308330' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={GrMail} link='mailto:info@prosas.az' />
                 </div>
             </section>
 
@@ -53,11 +54,11 @@ const Footer = () => {
                 <h3 className=''>{t('quick_links')}</h3>
                 {/* Links */}
                 <div className='flex flex-col gap-2'>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/'}>Home</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#about'}>About</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#projects'}>Projects</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#employees'}>Employees</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#footer'}>Contact</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/'}>{n('home')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#about'}>{n('about')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#projects'}>{n('projects')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#employees'}>{n('employees')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#footer'}>{n('contact')}</Link></div>
                 </div>
             </section>
 
