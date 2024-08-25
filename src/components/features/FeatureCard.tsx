@@ -21,7 +21,7 @@ const FeatureCard = ({
             <img
                 className='w-8 lg:w-12'
                 src={`/pngs/features-cards/${icon}`}
-                alt='feature-icon' 
+                alt='feature-image' 
             />
             <div className='flex flex-col items-center gap-3'>
                 {/* Feature name */}
