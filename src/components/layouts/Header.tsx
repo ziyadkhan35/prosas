@@ -8,6 +8,7 @@ import { useTranslations } from 'next-intl'
 import { FaBars } from 'react-icons/fa6'
 import { RxCross1 } from 'react-icons/rx'
 import MobileSlctLink from '../navbar/MobileSlctLink'
+import Link from 'next/link'
 
 const projects = [{name: 'Bilgah Beach Hotel', id: 1}, {name: 'Intourist Hotel Baku', id: 2}, {name: 'Baku Marriott Hotel Boulevard', id: 3}]
 
@@ -74,11 +75,11 @@ const Header = () => {
         {/* Mobile navigation toggle */}
         <button className='text-2xl ms-8' onClick={() => setMenu(!menu)}><RxCross1 /></button>
         {/* Links */}
-        <div className='flex flex-col gap-8 lg:gap-12 items-center'>
-          <NavLink text={t('home')} link='/' />
-          <NavLink text={t('about')} link='#about' />
+        <div className='flex flex-col gap-6 lg:gap-12 items-center'>
+          <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'/'} onClick={() => setMenu(!menu)}>{t('home')}</Link>
+          <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'#about'} onClick={() => setMenu(!menu)}>{t('about')}</Link>
           <MobileSlctLink />
-          <NavLink text={t('contact')} link='#footer' />
+          <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'#footer'} onClick={() => setMenu(!menu)}>{t('contact')}</Link>
           {/* Change language button */}
           <ChangeLang />
         </div>

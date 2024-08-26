@@ -6,7 +6,7 @@ const ContactCard = () => {
   // Intl
   const t = useTranslations('ContactUsBanner')
   return (
-    <div className='flex flex-col gap-8 md:gap-14 py-5 md:py-10 bg-gradient-to-r from-primary via-primary to-cloud-1 w-full text-center [text-shadow:_0_1px_0_rgb(0_0_0_/40%)]'>
+    <div className='flex flex-col gap-8 md:gap-14 py-5 md:py-10 bg-gradient-to-br from-primary to-teal-800 w-full text-center [text-shadow:_0_1px_0_rgb(0_0_0_/40%)]'>
         {/* Slogan */}
         <div className='flex flex-col gap-2'>
             <h2 className='capitalize'>{t('title')}</h2>
