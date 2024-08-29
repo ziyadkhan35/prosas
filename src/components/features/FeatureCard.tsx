@@ -25,7 +25,7 @@ const FeatureCard = ({
             />
             <div className='flex flex-col items-center gap-3'>
                 {/* Feature name */}
-                <h4 className='font-bold tracking-wide'>{header}</h4>
+                <h4 className='font-bold tracking-wide text-center'>{header}</h4>
                 {/* Feature text */}
                 <p className='text-center text-sm'>{text}</p>
             </div> 

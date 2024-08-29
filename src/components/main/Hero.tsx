@@ -13,7 +13,7 @@ const Hero = () => {
     <div className='relative flex items-center justify-center w-full h-screen top-0 left-0 object-cover'>
       {/* Image of background */}
       <Image
-        className='-z-10'
+        className='-z-10 object-cover'
         alt="Background"
         src={background}
         placeholder="blur"
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
           {/* Contact button and slider dots */}
           <div className='flex mt-8'>
-            <Link href={'tel:+994503308330'} className='rounded bg-primary py-2 px-4 font-[600] sm:hover:bg-cloud-1 sm:hover:text-primary active:bg-cloud-2  duration-150 capitalize'>{t('contact_us')}</Link>
+            <Link href={'tel:+994702053527'} className='rounded bg-primary py-2 px-4 font-[600] sm:hover:bg-cloud-1 sm:hover:text-primary active:bg-cloud-2  duration-150 capitalize'>{t('contact_us')}</Link>
           </div>
         </div>  
 

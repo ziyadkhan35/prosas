@@ -43,7 +43,7 @@ const EmblaContanierEmp = () => {
                 <div className='flex flex-col'>
                     {/* Image of employee */}
                     <div className='h-80 relative'>
-                        <Image className='rounded-t lg:rounded-t-xl object-cover' src={employee.picture} fill alt='Picture of employee' />
+                        <Image className='rounded-t lg:rounded-t-xl object-cover' src={employee.picture} fill alt='Picture of employee' priority />
                     </div>
 
                     {/* Employee details */}

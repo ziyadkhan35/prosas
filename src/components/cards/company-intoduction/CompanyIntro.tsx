@@ -62,10 +62,10 @@ const CompanyIntro = () => {
                          title={t('par2_title')}
                          text={t('par2_text')} />
                         <div className='flex flex-col gap-3 mx-8'>
-                            <div className='flex gap-3'>
+                            {/* <div className='flex gap-3'>
                                 <div><GoDot /></div>
                                 <p>{t('par5_text')}</p>
-                            </div>
+                            </div> */}
                             <div className='flex gap-3'>
                                 <div><GoDot /></div>
                                 <p>{t('par6_text')}</p>

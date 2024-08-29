@@ -1,21 +1,6 @@
 [
     {
         "id": 1,
-        "name": "Orkhan",
-        "surname": "Mursalov",
-        "fullname": "Orkhan Mursalov",
-        "position": "Project Manager",
-        "email": "mailto:info@prosas.az",
-        "phone": "tel:+994503308330",
-        "picture": "/employees/profile-picture/orkhan-mursalov.jpg",
-        "socialMedia": {
-            "whatsapp": "/",
-            "instagram": "/",
-            "linkedin": "https://www.linkedin.com/in/orkhanmursalov2505/"
-        }
-    },
-    {
-        "id": 2,
         "name": "Iman",
         "surname": "Mansurov",
         "fullname": "Iman Mansurov",
@@ -29,7 +14,7 @@
             "linkedin": "https://www.linkedin.com/in/iman-mansurov-73457084/"
         }
     },{
-        "id": 3,
+        "id": 2,
         "name": "Shamkhal",
         "surname": "Abdullayev",
         "fullname": "Shamkhal Abdullayev",
@@ -43,7 +28,7 @@
             "linkedin": "/"
         }
     },{
-        "id": 4,
+        "id": 3,
         "name": "Anar",
         "surname": "Ahmadov",
         "fullname": "Anar Ahmadov",
@@ -57,7 +42,7 @@
             "linkedin": "/"
         }
     },{
-        "id": 5,
+        "id": 4,
         "name": "Dashqin",
         "surname": "Shabazaliyev",
         "fullname": "Dashqin Shabazaliyev",
@@ -71,7 +56,7 @@
             "linkedin": "/"
         }
     },{
-        "id": 6,
+        "id": 5,
         "name": "Shanur",
         "surname": "Aliyev",
         "fullname": "Shanur Aliyev",
@@ -85,7 +70,7 @@
             "linkedin": "/"
         }
     },{
-        "id": 7,
+        "id": 6,
         "name": "Tahir",
         "surname": "İslamov",
         "fullname": "Tahir İslamov",
