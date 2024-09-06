@@ -7,7 +7,7 @@ import ServiceCard from '../services/ServiceCard'
 import { useTranslations } from 'next-intl'
 
 const ServicesCarousel = () => {
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 2000 })])
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 2000 })])
 
     // Internationalization
     const t = useTranslations("Services")
