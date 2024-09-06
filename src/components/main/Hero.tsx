@@ -137,7 +137,7 @@ const Hero = () => {
                 src={hero.image}
                 quality={100}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                sizes="100vw"
                 priority
               />
             </div>
