@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const PartnersCarousel = () => {
 
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 1000, stopOnInteraction: false })])
     
   return (
     <div className="embla overflow-hidden px-2" ref={emblaRef}>

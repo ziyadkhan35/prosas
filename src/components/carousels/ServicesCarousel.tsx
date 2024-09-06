@@ -7,7 +7,7 @@ import ServiceCard from '../services/ServiceCard'
 import { useTranslations } from 'next-intl'
 
 const ServicesCarousel = () => {
-    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()])
+    const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 2000 })])
 
     // Internationalization
     const t = useTranslations("Services")
@@ -19,9 +19,9 @@ const ServicesCarousel = () => {
 
   return (
     <div className="embla overflow-hidden" ref={emblaRef}>
-        <div className="embla__container flex lg:gap-16">
+        <div className="embla__container flex">
             {translatedServices.map((service, index) => (
-                <div key={index} className='embla__slide flex-none basis-full lg:basis-1/4 min-w-0'>
+                <div key={index} className='embla__slide flex-none basis-full lg:basis-1/4 min-w-0 lg:mr-16'>
                     <ServiceCard Icon={service.Icon} title={service.title} desc={service.desc} />
                 </div>
             ))}

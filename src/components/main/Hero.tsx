@@ -6,15 +6,12 @@ import Link from 'next/link'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight, MdLocalPhone, MdOutlineLocalPhone } from 'react-icons/md'
-import FilledSocialBtn from '../common/buttons/FilledSocialBtn'
-import { IoLogoLinkedin } from 'react-icons/io'
-import { GrMail } from 'react-icons/gr'
 
 const Hero = () => {
   const t = useTranslations('Hero')
   
   // For carousel
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnInteraction: false })])
 
   // Background slider datas
   const heros = [
@@ -105,14 +102,7 @@ const Hero = () => {
               <div className="flex flex-col relative top-1/4 sm:top-1/3 ms-3 sm:ms-8 lg:ms-16 xl:ms-40">
                 <h1 className='text-3xl lg:text-6xl font-[600] w-3/4 md:w-2/4'>{hero.title}</h1>
                 <p className='text-sm md:text-base xl:text-lg w-11/12 md:w-2/3 mt-4 sm:mt-8'>{hero.paragraph}</p>
-                <div className="flex flex-col md:flex-row gap-6 self-start mt-16 2xl:mt-28">
-                  <Link href={'tel:+994502053527'} className='self-start rounded-md backdrop-blur-md bg-[#152A38]/70 py-3 px-6'>{hero.button}</Link>
-                  <div className="flex gap-3 self-start">
-                    <FilledSocialBtn backgroundColor='transparent' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/iman-mansurov-73457084/' />
-                    <FilledSocialBtn backgroundColor='transparent' logo={MdLocalPhone} link='tel:+994502053527' />
-                    <FilledSocialBtn backgroundColor='transparent' logo={GrMail} link='mailto:info@prosas.az' />
-                  </div>
-                </div>
+                <Link href={'tel:+994502053527'} className='self-start rounded backdrop-blur-md bg-[#152A38]/50 py-3 px-6 mt-16 2xl:mt-28'>{hero.button}</Link>
               </div>
 
               <div className='hidden md:flex flex-col gap-8 top-1/4 absolute right-6 lg:right-12 xl:right-24 w-56'>
