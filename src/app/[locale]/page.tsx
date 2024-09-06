@@ -1,6 +1,5 @@
 import AboutUs from "@/components/about-us/AboutUs";
 import ContactCard from "@/components/cards/common/ContactCard";
-import ServicesCarousel from "@/components/carousels/ServicesCarousel";
 import FeatureSection from "@/components/features/FeatureSection";
 import Hero from "@/components/main/Hero";
 import Partners from "@/components/partners/Partners";
