@@ -1,5 +1,4 @@
 import React from 'react'
-import PrimaryTitle from '../common/titles/PrimaryTitle'
 import PartnersCarousel from '../carousels/PartnersCarousel'
 import { useTranslations } from 'next-intl'
 
