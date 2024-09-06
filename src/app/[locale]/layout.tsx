@@ -9,30 +9,30 @@ import { NextIntlClientProvider } from "next-intl";
 export const metadata: Metadata = {
   title: "ProSAS",
   description: "ProSAS provides advanced fire protection systems, IT equipment installation, and security solutions to keep your assets safe.",
-  keywords: ['fire protection', 'IT equipment installation', 'security systems', 'CCTV', 'emergency announcement', 'fm-200', 'ProSAS', 'prosas'],
-  authors: [{ name: 'Ziyadkhan Murudov' }],
-  creator: 'Ziyadkhan Murudov',
-  publisher: 'Ziyadkhan Murudov',
-  robots: {
-    index: false,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: false,
-      noimageindex: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  }
+  // keywords: ['fire protection', 'IT equipment installation', 'security systems', 'CCTV', 'emergency announcement', 'fm-200', 'ProSAS', 'prosas'],
+  // authors: [{ name: 'Ziyadkhan Murudov' }],
+  // creator: 'Ziyadkhan Murudov',
+  // publisher: 'Ziyadkhan Murudov',
+  // robots: {
+  //   index: false,
+  //   follow: true,
+  //   nocache: true,
+  //   googleBot: {
+  //     index: true,
+  //     follow: false,
+  //     noimageindex: true,
+  //     'max-video-preview': -1,
+  //     'max-image-preview': 'large',
+  //     'max-snippet': -1,
+  //   },
+  // }
 }
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-}
+// export const viewport: Viewport = {
+//   width: 'device-width',
+//   initialScale: 1,
+//   maximumScale: 1,
+//   userScalable: false,
+// }
 
 interface RootLayoutProps {
   children: React.ReactNode;

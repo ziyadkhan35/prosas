@@ -41,7 +41,7 @@ const Footer = () => {
                 </div>
                 {/* Social media */}
                 <div className='flex gap-6'>
-                    <FilledSocialBtn backgroundColor='cloud' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/orkhanmursalov2505/' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/iman-mansurov-73457084/' />
                     <FilledSocialBtn backgroundColor='cloud' logo={MdLocalPhone} link='tel:+994502053527' />
                     <FilledSocialBtn backgroundColor='cloud' logo={GrMail} link='mailto:info@prosas.az' />
                 </div>

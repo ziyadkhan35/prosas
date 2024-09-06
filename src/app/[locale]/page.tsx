@@ -5,6 +5,7 @@ import Hero from "@/components/main/Hero";
 import Partners from "@/components/partners/Partners";
 import OurProjects from "@/components/projects/OurProjects";
 import Services from "@/components/services/Services";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
       <div className="mb-16" id="partners">
         <Partners />
       </div>
-    
+
     </main>
   );
 }

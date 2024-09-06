@@ -11,12 +11,12 @@ type SocialProps = {
 // Tailwind dynamic classes
 const type: any = {
   primary: 'bg-primary',
-  cloud: 'bg-cloud-1 text-primary'
+  cloud: 'bg-cloud-1 text-primary border border-cloud'
 }
 
 const FilledSocialBtn = ({backgroundColor, logo: Logo, link }: SocialProps) => {
   return (
-    <Link href={`${link}`} className={`${type[backgroundColor]} p-2 lg:p-3 rounded`}>
+    <Link href={`${link}`} className={`${type[backgroundColor]} p-2 lg:p-3 rounded border border-cloud`}>
         <div className='lg:text-xl'><Logo /></div>
     </Link>
   )

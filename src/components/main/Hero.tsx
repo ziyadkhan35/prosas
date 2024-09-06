@@ -5,7 +5,10 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight, MdOutlineLocalPhone } from 'react-icons/md'
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight, MdLocalPhone, MdOutlineLocalPhone } from 'react-icons/md'
+import FilledSocialBtn from '../common/buttons/FilledSocialBtn'
+import { IoLogoLinkedin } from 'react-icons/io'
+import { GrMail } from 'react-icons/gr'
 
 const Hero = () => {
   const t = useTranslations('Hero')
@@ -81,17 +84,6 @@ const Hero = () => {
         news_3 : t('news_6_3')
       }
     },
-    {
-      title: t('title_6'),
-      paragraph: t('paragraph_6'),
-      button: t('button_6'),
-      image: '/common/for-about1.jpg',
-      news: {
-        news_1 : t('news_6_1'),
-        news_2 : t('news_6_2'),
-        news_3 : t('news_6_3')
-      }
-    },
   ]
 
   // For slider arrow buttons
@@ -111,9 +103,16 @@ const Hero = () => {
           heros.map((hero, index)=>(
             <div className='relative shrink-0 grow-0 basis-full w-full h-screen top-0 left-0 object-cover embla__slide' key={index}>
               <div className="flex flex-col relative top-1/4 sm:top-1/3 ms-3 sm:ms-8 lg:ms-16 xl:ms-40">
-                <h1 className='text-2xl sm:text-3xl lg:text-6xl font-[600] w-3/4 md:w-2/4'>{hero.title}</h1>
+                <h1 className='text-3xl lg:text-6xl font-[600] w-3/4 md:w-2/4'>{hero.title}</h1>
                 <p className='text-sm md:text-base xl:text-lg w-11/12 md:w-2/3 mt-4 sm:mt-8'>{hero.paragraph}</p>
-                <Link href={'tel:+994502053527'} className='self-start mt-16 2xl:mt-28 rounded-md bg-[#152A38] py-3 px-6'>{hero.button}</Link>
+                <div className="flex flex-col md:flex-row gap-6 self-start mt-16 2xl:mt-28">
+                  <Link href={'tel:+994502053527'} className='self-start rounded-md backdrop-blur-md bg-[#152A38]/70 py-3 px-6'>{hero.button}</Link>
+                  <div className="flex gap-3 self-start">
+                    <FilledSocialBtn backgroundColor='transparent' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/iman-mansurov-73457084/' />
+                    <FilledSocialBtn backgroundColor='transparent' logo={MdLocalPhone} link='tel:+994502053527' />
+                    <FilledSocialBtn backgroundColor='transparent' logo={GrMail} link='mailto:info@prosas.az' />
+                  </div>
+                </div>
               </div>
 
               <div className='hidden md:flex flex-col gap-8 top-1/4 absolute right-6 lg:right-12 xl:right-24 w-56'>
@@ -138,7 +137,7 @@ const Hero = () => {
                 src={hero.image}
                 quality={100}
                 fill
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority
               />
             </div>
