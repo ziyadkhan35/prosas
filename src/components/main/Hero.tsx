@@ -81,6 +81,17 @@ const Hero = () => {
         news_3 : t('news_6_3')
       }
     },
+    {
+      title: t('title_6'),
+      paragraph: t('paragraph_6'),
+      button: t('button_6'),
+      image: '/common/for-about1.jpg',
+      news: {
+        news_1 : t('news_6_1'),
+        news_2 : t('news_6_2'),
+        news_3 : t('news_6_3')
+      }
+    },
   ]
 
   // For slider arrow buttons
