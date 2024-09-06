@@ -97,8 +97,8 @@ const Hero = () => {
     <div className='flex overflow-hidden w-full embla' ref={emblaRef}>
       <div className="flex w-full embla__container">   
         {
-          heros.map((hero)=>(
-            <div className='relative shrink-0 grow-0 basis-full w-full h-screen top-0 left-0 object-cover embla__slide'>
+          heros.map((hero, index)=>(
+            <div className='relative shrink-0 grow-0 basis-full w-full h-screen top-0 left-0 object-cover embla__slide' key={index}>
               <div className="flex flex-col relative top-1/4 sm:top-1/3 ms-3 sm:ms-8 lg:ms-16 xl:ms-40">
                 <h1 className='text-2xl sm:text-3xl lg:text-6xl font-[600] w-3/4 md:w-2/4'>{hero.title}</h1>
                 <p className='text-sm md:text-base xl:text-lg w-11/12 md:w-2/3 mt-4 sm:mt-8'>{hero.paragraph}</p>
