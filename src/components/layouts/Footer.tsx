@@ -2,8 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import IconAndText from '../common/with-icons/IconAndText'
 import { FaLocationDot } from 'react-icons/fa6'
-import { IoIosMail, IoLogoLinkedin } from 'react-icons/io'
-import { BsTelephoneFill } from 'react-icons/bs'
+import { IoLogoLinkedin } from 'react-icons/io'
 import FilledSocialBtn from '../common/buttons/FilledSocialBtn'
 import { MdKeyboardArrowRight, MdLocalPhone } from 'react-icons/md'
 import Link from 'next/link'
@@ -36,14 +35,14 @@ const Footer = () => {
                     {/* Mail, phone, location container */}
                     <div className='flex flex-col gap-2'>
                         <IconAndText Icon={FaLocationDot} text='ProSAS MMC' />
-                        <IconAndText Icon={IoIosMail} text='info@prosas.az' />
-                        <IconAndText Icon={BsTelephoneFill} text='+994 (70) 205 35 27' />
+                        <IconAndText Icon={GrMail} text='info@prosas.az' />
+                        <IconAndText Icon={MdLocalPhone} text='+994 (50) 205 35 27' />
                     </div>
                 </div>
                 {/* Social media */}
                 <div className='flex gap-6'>
                     <FilledSocialBtn backgroundColor='cloud' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/orkhanmursalov2505/' />
-                    <FilledSocialBtn backgroundColor='cloud' logo={MdLocalPhone} link='tel:+994503308330' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={MdLocalPhone} link='tel:+994502053527' />
                     <FilledSocialBtn backgroundColor='cloud' logo={GrMail} link='mailto:info@prosas.az' />
                 </div>
             </section>
@@ -57,7 +56,7 @@ const Footer = () => {
                     <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/'}>{n('home')}</Link></div>
                     <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#about'}>{n('about')}</Link></div>
                     <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#projects'}>{n('projects')}</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#employees'}>{n('employees')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#services'}>{n('services')}</Link></div>
                     <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#footer'}>{n('contact')}</Link></div>
                 </div>
             </section>

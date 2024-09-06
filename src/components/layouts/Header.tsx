@@ -41,9 +41,11 @@ const Header = () => {
   const [menu, setMenu] = useState(false)
   
   return (
-    <div className={`flex flex-row-reverse md:flex-row fixed items-center justify-between top-0 z-50 w-full lg:px-16 px-8 duration-300 ${color ? 'bg-[rgba(27,44,59,0.95)]': 'bg-transparent'}`}>     
+    <div className={`flex flex-row-reverse md:flex-row fixed items-center justify-between top-0 z-50 w-full px-3 sm:px-8 lg:px-16 duration-300 ${color ? 'bg-[rgba(21,42,56,0.95)]': 'bg-transparent'}`}>     
       {/* Logo */}
-      <div className="relative z-[-1] flex place-items-center">
+      <div className="relative z-[-1] flex gap-6 place-items-center">
+        <div className='flex md:hidden'><ChangeLang /></div> {/* Change language button */}
+        {/* Logo */}
         <Image
           src="/logo.png"
           alt="ProSAS Logo"
@@ -52,6 +54,7 @@ const Header = () => {
           priority
         />
       </div>
+      
 
       {/* Links */}
       <div className='hidden md:flex gap-8 lg:gap-12 items-center'>
@@ -71,13 +74,14 @@ const Header = () => {
 
 
       {/* Mobile menu */}
-      <div className={`absolute top-0 min-h-screen pt-8 w-full bg-[rgba(27,44,59,0.95)] duration-300 ${menu ? 'left-0' : '-left-full'}`}>
+      <div className={`absolute top-0 min-h-screen pt-6 w-full bg-[rgba(27,44,59,0.95)] duration-300 ${menu ? 'left-0' : '-left-full'}`}>
         {/* Mobile navigation toggle */}
-        <button className='text-2xl ms-8' onClick={() => setMenu(!menu)}><RxCross1 /></button>
+        <button className='text-2xl ms-3 sm:ms-8' onClick={() => setMenu(!menu)}><RxCross1 /></button>
         {/* Links */}
         <div className='flex flex-col gap-6 lg:gap-12 items-center'>
           <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'/'} onClick={() => setMenu(!menu)}>{t('home')}</Link>
           <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'#about'} onClick={() => setMenu(!menu)}>{t('about')}</Link>
+          <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'#services'} onClick={() => setMenu(!menu)}>{t('services')}</Link>
           <MobileSlctLink />
           <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'#footer'} onClick={() => setMenu(!menu)}>{t('contact')}</Link>
           {/* Change language button */}

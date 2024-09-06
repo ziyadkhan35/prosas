@@ -10,27 +10,27 @@ const PartnersCarousel = () => {
     
   return (
     <div className="embla overflow-hidden px-2" ref={emblaRef}>
-      <div className="embla__container flex gap-6 md:gap-4">
+      <div className="embla__container flex gap-6 md:gap-8">
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
-          <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
+          <Image src={'/partners/bosch.png'} width={150} height={150} alt='image of partner' />
         </div>
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
           <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
         </div>
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
-          <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
+          <Image src={'/partners/ahg.png'} width={150} height={150} alt='image of partner' />
         </div>
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
-          <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
+          <Image src={'/partners/hikvision.png'} width={150} height={150} alt='image of partner' />
         </div>
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
-          <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
+          <Image src={'/partners/abv.png'} width={150} height={150} alt='image of partner' />
         </div>
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
-          <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
+          <Image src={'/partners/azerconnect.png'} width={150} height={150} alt='image of partner' />
         </div>
         <div className="embla__slide flex-none basis-1/3 sm:basis-1/6 min-w-0 relative flex items-center justify-center">
-          <Image src={'/partners/ateksis.png'} width={150} height={150} alt='image of partner' />
+          <Image src={'/partners/microsoft.png'} width={150} height={150} alt='image of partner' />
         </div>
       </div>
     </div>

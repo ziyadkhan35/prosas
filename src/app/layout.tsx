@@ -7,9 +7,9 @@ interface ErrorProps {
 export default function GlobalError({ children }: ErrorProps) {
   return (
     <html>
-    <body>
-    {children}
-    </body>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }

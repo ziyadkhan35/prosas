@@ -1,28 +1,19 @@
 import React from 'react'
 
-const FeatureCard = ({
-    icon, header, text, type
-    }: {
-    icon: string,
-    header: string,
-    text: string,
-    type: string 
-    }) => {
+type FeatureCardProps = {
+    icon: React.ReactNode;
+    header: string;
+    text: string;
+}
 
-    const featureType: any = {
-        primary: 'bg-primary text-cloud-1',
-        cloud: 'bg-cloud-1 text-night-1'
-    }
+const FeatureCard: React.FC<FeatureCardProps> = ({icon, header, text}) => {
+
   return (
         <div
-            className={`${featureType[type]} flex flex-col items-center gap-4 rounded-lg px-4 py-6 w-full h-full`}
+            className='flex flex-col items-center gap-2 rounded-lg px-4 py-6 w-full h-full backdrop-blur-sm bg-primary/30'
         >
             {/* Feature icon */}
-            <img
-                className='w-8 lg:w-12'
-                src={`/pngs/features-cards/${icon}`}
-                alt='feature-image' 
-            />
+            <div className='text-primary text-2xl'>{icon}</div>
             <div className='flex flex-col items-center gap-3'>
                 {/* Feature name */}
                 <h4 className='font-bold tracking-wide text-center'>{header}</h4>

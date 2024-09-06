@@ -1,10 +1,11 @@
+import AboutUs from "@/components/about-us/AboutUs";
 import ContactCard from "@/components/cards/common/ContactCard";
-import CompanyIntro from "@/components/cards/company-intoduction/CompanyIntro";
-import Employees from "@/components/cards/employees/Employees";
+import ServicesCarousel from "@/components/carousels/ServicesCarousel";
 import FeatureSection from "@/components/features/FeatureSection";
 import Hero from "@/components/main/Hero";
 import Partners from "@/components/partners/Partners";
 import OurProjects from "@/components/projects/OurProjects";
+import Services from "@/components/services/Services";
 
 export default function Home() {
   return (
@@ -14,27 +15,27 @@ export default function Home() {
       {/* Hero section */}
       <Hero />
 
+      {/* About our company section */}
+      <div id="about" className="my-5 lg:my-10">
+        <AboutUs />
+      </div>
+
       {/* Features section */}
       <FeatureSection />
 
       {/* Contact us banner section */}
-      <div className=" my-8 md:my-16">
+      <div className="my-8 md:my-16">
         <ContactCard />
       </div>
 
-      {/* About our company section */}
-      <div id="about" className="my-5 lg:my-10">
-        <CompanyIntro />
+      {/* Services */}
+      <div id="services" className="my-8 md:my-16">
+        <Services />
       </div>
-
+      
       {/* Recent works section with carousel */}
-      <div id="projects">
+      <div id="projects" className="md:my-16">
         <OurProjects />
-      </div>
-
-      {/* Employees section with carousel */}
-      <div id="employees">
-        <Employees />
       </div>
 
       {/* Our partners section */}

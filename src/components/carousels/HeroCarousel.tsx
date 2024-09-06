@@ -20,19 +20,31 @@ const HeroCarousel = () => {
     <div className='lg:basis-2/3 overflow-hidden max-h-[35rem] relative embla' ref={emblaRef}>
         <div className='flex embla__container'>
             {
-            images.map((img) => (
-                <Image
-                    key={img.id}
+            // images.map((img) => (
+            //     <div className='relative flex items-center justify-center w-full h-screen top-0 left-0 object-cover'>
+            //         <Image
+            //         key={img.id}
+            //         className='rounded-s embla__slide basis-full flex-none object-cover'
+            //         src={`/hero-carousel/${img.name}.jpg`}
+            //         quality={100}
+            //         fill
+            //         alt='image of slide'
+            //         priority
+            //     />
+            //     </div>
+            // ))
+                
+           
+                    <Image
+                    
                     className='rounded-s embla__slide basis-full flex-none object-cover'
-                    src={`/hero-carousel/${img.name}.jpg`}
+                    src={`/hero-carousel/hero1.jpg`}
                     quality={100}
-                    width={100}
-                    height={100}
-                    sizes="100vw"
+                    fill
                     alt='image of slide'
                     priority
                 />
-            ))
+
             }
         </div>
     </div>
