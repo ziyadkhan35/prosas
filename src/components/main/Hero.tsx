@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight, MdLocalPhone, MdOutlineLocalPhone } from 'react-icons/md'
+import { CgArrowLongLeft, CgArrowLongRight } from 'react-icons/cg'
 
 const Hero = () => {
   const t = useTranslations('Hero')
@@ -102,7 +102,7 @@ const Hero = () => {
               <div className="flex flex-col relative top-1/4 sm:top-1/3 ms-3 sm:ms-8 lg:ms-16 xl:ms-40">
                 <h1 className='text-3xl lg:text-6xl font-[600] w-3/4 md:w-2/4'>{hero.title}</h1>
                 <p className='text-sm md:text-base xl:text-lg w-11/12 md:w-2/3 mt-4 sm:mt-8'>{hero.paragraph}</p>
-                <Link href={'tel:+994502053527'} className='self-start rounded backdrop-blur-md bg-[#152A38]/50 py-3 px-6 mt-16 2xl:mt-28'>{hero.button}</Link>
+                <Link href={'tel:+994502053527'} className='self-start rounded backdrop-blur-md bg-[#152A38]/60 py-3 px-6 mt-16 2xl:mt-28'>{hero.button}</Link>
               </div>
 
               <div className='hidden md:flex flex-col gap-8 top-1/4 absolute right-6 lg:right-12 xl:right-24 w-56'>
@@ -129,6 +129,7 @@ const Hero = () => {
                 fill
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 priority
+                unoptimized
               />
             </div>
           ))
@@ -137,12 +138,12 @@ const Hero = () => {
 
       
       {/* Buttons for scroll slider */}
-      <div className='flex items-center justify-center gap-20 md:gap-0 absolute bottom-5 left-1/2 -translate-x-1/2 text-4xl'>
+      <div className='flex items-center justify-center gap-20 md:gap-5 absolute bottom-5 left-1/2 -translate-x-1/2 text-4xl'>
         <button className="embla__prev active:text-slate-400" onClick={scrollPrev}>
-          <MdKeyboardArrowLeft />
+          <CgArrowLongLeft />
         </button>
         <button className="embla__next active:text-slate-400" onClick={scrollNext}>
-          <MdKeyboardArrowRight />
+          <CgArrowLongRight />
         </button>
       </div>
 
