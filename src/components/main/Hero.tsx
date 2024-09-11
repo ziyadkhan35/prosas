@@ -140,6 +140,7 @@ const Hero = () => {
                 fill
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 priority
+                unoptimized
               />
             </div>
           ))
