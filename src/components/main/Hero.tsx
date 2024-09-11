@@ -81,6 +81,17 @@ const Hero = () => {
         news_3 : t('news_6_3')
       }
     },
+    {
+      title: t('title_7'),
+      paragraph: t('paragraph_7'),
+      button: t('button_7'),
+      image: '/hero-backgrounds/background7.jpg',
+      news: {
+        news_1 : t('news_7_1'),
+        news_2 : t('news_7_2'),
+        news_3 : t('news_7_3')
+      }
+    },
   ]
 
   // For slider arrow buttons
@@ -129,7 +140,6 @@ const Hero = () => {
                 fill
                 sizes="(max-width: 600px) 100vw, (max-width: 1200px) 100vw, 100vw"
                 priority
-                unoptimized
               />
             </div>
           ))

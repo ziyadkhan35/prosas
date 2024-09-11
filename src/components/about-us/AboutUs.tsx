@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
-import aboutUs from '/public/common/for-about1.jpg'
+import aboutUs from '/public/common/for-about.jpg'
 import Link from 'next/link'
 
 const AboutUs = () => {
