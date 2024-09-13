@@ -5,7 +5,6 @@ import Hero from "@/components/main/Hero";
 import Partners from "@/components/partners/Partners";
 import OurProjects from "@/components/projects/OurProjects";
 import Services from "@/components/services/Services";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,7 +12,9 @@ export default function Home() {
     <main className="flex flex-col gap-12">
 
       {/* Hero section */}
-      <Hero />
+      <div id="main">
+        <Hero />
+      </div>
 
       {/* About our company section */}
       <div id="about" className="my-5 lg:my-10">

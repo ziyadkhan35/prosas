@@ -46,13 +46,15 @@ const Header = () => {
       <div className="relative z-[-1] flex gap-6 place-items-center">
         <div className='flex md:hidden'><ChangeLang /></div> {/* Change language button */}
         {/* Logo */}
-        <Image
-          src="/logo.png"
-          alt="ProSAS Logo"
-          width={50}
-          height={50}
-          priority
-        />
+        <Link href={'/'}>
+          <Image
+            src="/logo.png"
+            alt="ProSAS Logo"
+            width={50}
+            height={50}
+            priority
+          />
+        </Link>
       </div>
       
 
@@ -71,7 +73,6 @@ const Header = () => {
 
       {/* Mobile navigation toggle */}
       <button className='md:hidden text-2xl' onClick={() => setMenu(!menu)}><FaBars /></button>
-
 
       {/* Mobile menu */}
       <div className={`absolute top-0 min-h-screen pt-6 w-full bg-[rgba(27,44,59,0.95)] duration-300 ${menu ? 'left-0' : '-left-full'}`}>
