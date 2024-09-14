@@ -11,7 +11,7 @@ const Hero = () => {
   const t = useTranslations('Hero')
   
   // For carousel
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 3000, stopOnInteraction: false })])
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ stopOnInteraction: false })])
 
   // Background slider datas
   const heros = [

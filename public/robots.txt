@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://prosas.az
+
+# Sitemaps
+Sitemap: https://prosas.az/sitemap.xml

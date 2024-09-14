@@ -7,6 +7,7 @@ import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.prosas.az'),
   title: "ProSAS",
   description: "ProSAS provides advanced fire protection systems, IT equipment installation, and security solutions to keep your assets safe.",
   keywords: ['fire protection', 'IT equipment installation', 'security systems', 'CCTV', 'emergency announcement', 'fm-200', 'ProSAS', 'prosas', 'yanğından mühafizə sistemləri','CCTV', 'kamera təhlükəsizliyi', 'video müşahidə','şəbəkə infrastruktur', 'qazlı yanğın söndürmə', ' ictimai anons sistemləri', 'fon musiqisi sistemləri', 'системы фоновой музыки', 'bina avtomatlaşdırılması', 'автоматизация зданий', 'системы оповещения в чрезвычайных ситуациях', 'газовое пожаротушение', 'сеть инфраструктура', 'системы сетей для бизнеса', 'IT решения для сетей', 'LAN', 'WAN', 'системы видеонаблюдения', 'камеры безопасности', 'системы пожарной защиты'],
@@ -14,18 +15,35 @@ export const metadata: Metadata = {
   creator: 'Ziyadkhan Murudov',
   publisher: 'Ziyadkhan Murudov',
   robots: {
-    index: false,
+    index: true,
     follow: true,
     nocache: true,
     googleBot: {
       index: true,
-      follow: false,
+      follow: true,
       noimageindex: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  }
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en',
+      'az-AZ': '/az',
+      'ru-RU': '/ru',
+    },
+  },
+  openGraph: {
+    title: 'ProSAS',
+    description: 'Fire protection systems, IT equipment installation, and security solutions.',
+    url: 'https://prosas.az/',
+    siteName: 'ProSAS',
+    images: '/logo.png',
+    locale: 'en_US',
+    type: 'website',
+  },
 }
 export const viewport: Viewport = {
   width: 'device-width',
