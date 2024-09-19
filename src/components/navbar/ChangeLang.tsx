@@ -22,7 +22,7 @@ const ChangeLang = () => {
      disabled={isPending} 
      defaultValue={localActive}
      className="text-cloud-1 bg-primary text-shadow-sm lg:text-lg p-1 rounded tracking-wide mt-1 capitalize" >
-      <option value="aze">AZE</option>
+      <option value="az">AZ</option>
       <option value="ru">RU</option>
       <option value="en">EN</option>
     </select>

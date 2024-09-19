@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl'
 
 const OurProjects = () => {
   
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay()])
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
@@ -42,13 +42,13 @@ const OurProjects = () => {
       {/* Project gallery with embla carousel*/}
       <div className='embla absolute bottom-[-25%] sm:bottom-[-35%] overflow-hidden px-2 sm:px-6'>
         <div className='embla__viewport' ref={emblaRef}>
-          <div className='embla__container flex gap-4 sm:gap-8'>
-            <Image className='rounded lg:rounded-xl object-cover embla__slide' src={'/projects/bilgah-beach-hotel.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover embla__slide' src={'/projects/intourist-hotel-baku.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover embla__slide' src={'/projects/mariott-hotel-boulevard.jpg'} width={400} height={300} alt='picture of project'/>
-            <Image className='rounded lg:rounded-xl object-cover embla__slide' src={'/projects/cresent-mall.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover embla__slide' src={'/projects/port-baku-mall.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover embla__slide' src={'/projects/jumeirah-bilgah-beach.jpg'} width={400} height={300} alt='picture of project'/>
+          <div className='embla__container flex'>
+            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/bilgah-beach-hotel.jpg'} width={400} height={300} alt='picture of project' />
+            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/intourist-hotel-baku.jpg'} width={400} height={300} alt='picture of project' />
+            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/mariott-hotel-boulevard.jpg'} width={400} height={300} alt='picture of project'/>
+            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/cresent-mall.jpg'} width={400} height={300} alt='picture of project' />
+            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/port-baku-mall.jpg'} width={400} height={300} alt='picture of project' />
+            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/jumeirah-bilgah-beach.jpg'} width={400} height={300} alt='picture of project'/>
           </div>
         </div>
       </div>
