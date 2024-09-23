@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://prosas.az/',
     languages: {
       'en-US': '/en',
       'az-AZ': '/az',
