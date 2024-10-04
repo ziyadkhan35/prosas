@@ -141,13 +141,12 @@ const Hero = () => {
               </div>
 
               <Image
-                className='-z-10 object-cover'
+                className='-z-10 object-cover h-full w-full top-0 left-0 absolute'
                 alt="Background"
                 src={hero.image}
                 quality={100}
-                fill
-                sizes="(max-width: 600px) 100vw, (max-width: 1200px) 100vw, 100vw"
-                unoptimized
+                width={10000}
+                height={10000}
                 placeholder="blur"
                 blurDataURL={hero.blurData}
               />
