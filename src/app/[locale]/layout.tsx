@@ -36,11 +36,11 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'ProSAS',
-    description: 'Fire protection systems, IT equipment installation, and security solutions.',
+    title: 'ProSAS - Comprehensive Safety & Security Solutions',
+    description: 'ProSAS - Innovative fire protection, IT solutions, and security services for your safety.',
     url: 'https://prosas.az/',
     siteName: 'ProSAS',
-    images: '/logo.png',
+    images: '/open-graph-image.png',
     locale: 'en_US',
     type: 'website',
   },
@@ -48,8 +48,8 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
+  maximumScale: 5,
+  userScalable: true,
 }
 
 interface RootLayoutProps {

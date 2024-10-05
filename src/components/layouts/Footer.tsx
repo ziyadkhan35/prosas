@@ -6,9 +6,9 @@ import { IoLogoLinkedin } from 'react-icons/io'
 import FilledSocialBtn from '../common/buttons/FilledSocialBtn'
 import { MdKeyboardArrowRight, MdLocalPhone } from 'react-icons/md'
 import Link from 'next/link'
-import CustomInput from '../common/inputs/CustomInput'
 import { useTranslations } from 'next-intl'
 import { GrMail } from 'react-icons/gr'
+import WriteUsForm from '../forms/WriteUsForm'
 
 const Footer = () => {
 
@@ -41,9 +41,9 @@ const Footer = () => {
                 </div>
                 {/* Social media */}
                 <div className='flex gap-6'>
-                    <FilledSocialBtn backgroundColor='cloud' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/iman-mansurov-73457084/' />
-                    <FilledSocialBtn backgroundColor='cloud' logo={MdLocalPhone} link='tel:+994502053527' />
-                    <FilledSocialBtn backgroundColor='cloud' logo={GrMail} link='mailto:info@prosas.az' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={IoLogoLinkedin} link='https://www.linkedin.com/in/iman-mansurov-73457084/' ariaLabel='Our LinkedIn profile' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={MdLocalPhone} link='tel:+994502053527' ariaLabel='Our phone number' />
+                    <FilledSocialBtn backgroundColor='cloud' logo={GrMail} link='mailto:info@prosas.az' ariaLabel='Our email address'/>
                 </div>
             </section>
 
@@ -62,22 +62,8 @@ const Footer = () => {
             </section>
 
             {/* Write to Us section */}
-            <section className='flex flex-col gap-3 lg:gap-6'>
-                {/* Title */}
-                <h3>{t('write_to_us')}</h3>
-                {/* Form */}
-                <form
-                 action={'https://formspree.io/f/mldrpdny'}
-                 method='POST'
-                 className='flex flex-col gap-2'>
-                    <CustomInput bgColor='custom' type='text' title={t('fullname')} id='fName' required />
-                    <CustomInput bgColor='custom' type='email' title={t('email')} id='email' required/>
-                    <CustomInput bgColor='custom' type='tel' title={t('phone_number')} id='phone' required />
-                    <label htmlFor='application'>{t('application_title')}:</label>
-                    <textarea className='bg-[#D9D9D9] text-night-1 rounded px-2 py-3 min-w-0' id='application' placeholder={t('application_placeholder')} required></textarea>
-                    <button className='bg-cloud-1 text-primary rounded py-2 px-10 self-end font-[600] mt-8' type="submit">{t('send')}</button>
-                </form>
-            </section>
+            <WriteUsForm />
+
         </main>
 
         {/* All rigt reserved paragraph */}

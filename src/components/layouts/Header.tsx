@@ -61,7 +61,7 @@ const Header = () => {
       {/* Links */}
       <div className='hidden md:flex gap-8 lg:gap-12 items-center'>
         <NavLink text={t('home')} link='/' />
-        <NavLink text={t('about')} link='#about' />
+        <NavLink text={t('about')} link='/about' />
         <NavSlctLink 
           text={t('projects')}
           options={projects}
@@ -72,12 +72,26 @@ const Header = () => {
       </div>
 
       {/* Mobile navigation toggle */}
-      <button className='md:hidden text-2xl' onClick={() => setMenu(!menu)}><FaBars /></button>
+      <button
+       className='md:hidden text-2xl'
+       onClick={() => setMenu(!menu)}
+       aria-label='Open menu'
+       title='Open menu'
+       >
+        <FaBars aria-hidden />
+      </button>
 
       {/* Mobile menu */}
       <div className={`absolute top-0 min-h-screen pt-6 w-full bg-[rgba(27,44,59,0.95)] duration-300 ${menu ? 'left-0' : '-left-full'}`}>
         {/* Mobile navigation toggle */}
-        <button className='text-2xl ms-3 sm:ms-8' onClick={() => setMenu(!menu)}><RxCross1 /></button>
+        <button
+         className='text-2xl ms-3 sm:ms-8'
+         onClick={() => setMenu(!menu)}
+         aria-label={menu ? 'Close menu' : 'Open menu'}
+         title={menu ? 'Close menu' : 'Open menu'}
+        >
+          <RxCross1 aria-hidden="true"/>
+        </button>
         {/* Links */}
         <div className='flex flex-col gap-6 lg:gap-12 items-center'>
           <Link className='font-[600] tracking-wide text-cloud-1 active:text-primary px-1 py-3 capitalize' href={'/'} onClick={() => setMenu(!menu)}>{t('home')}</Link>

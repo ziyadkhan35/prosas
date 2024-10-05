@@ -157,13 +157,26 @@ const Hero = () => {
 
       
       {/* Buttons for scroll slider */}
-      
       <div className='flex items-center justify-center gap-20 md:gap-5 absolute bottom-5 left-1/2 -translate-x-1/2 text-4xl'>
-        <button className="embla__prev active:text-slate-400" onClick={scrollPrev}>
-          <CgArrowLongLeft />
+      
+        {/* Previous button */}
+        <button
+         className="embla__prev active:text-slate-400" 
+         onClick={scrollPrev}
+         aria-label='Previous slide'
+         title='Previous slide'
+        >
+          <CgArrowLongLeft aria-hidden />
         </button>
-        <button className="embla__next active:text-slate-400" onClick={scrollNext}>
-          <CgArrowLongRight />
+
+        {/* Next button */}
+        <button
+         className="embla__next active:text-slate-400" 
+         onClick={scrollNext}
+         aria-label='Next slide'
+         title='Next slide'
+        >
+          <CgArrowLongRight aria-hidden />
         </button>
       </div>
       
