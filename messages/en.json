@@ -127,5 +127,45 @@
     "application_placeholder": "I have a job offer for you.",
     "send": "Send",
     "copyright": "© ProSas MMC - All Rights Reserved"
+  },
+  
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, az {🇦🇿 Az.} en {🇺🇸 En.} ru {🇷🇺 Ru.} other {Unknown}}"
+  },
+
+  "AboutPage": {
+    "title": "Who Are We?",
+    "text": "At ProSAS, we are a company specializing in security and technological solutions. We provide our clients with modern fire safety systems, CCTV cameras, network setups, emergency announcement systems, and other innovative solutions. Our goal is to offer a fully personalized approach tailored to the needs of each client, ensuring the highest level of protection for their facilities and assets.",
+    
+    "companyOverview": {
+      "mission": {
+        "title": "Mission",
+        "text": "Our primary mission is to ensure the safety and reliability of our clients' environments by providing the most advanced security and technology solutions. Our main goal is to offer sustainable and reliable services based on customer satisfaction."
+      },
+      "services": {
+        "title": "Services",
+        "service_1": "Fire Protection Systems: Modern and efficient fire suppression solutions.",
+        "service_2": "CCTV Camera Systems: 24/7 surveillance and security.",
+        "service_3": "Network Solutions: Designing and installing network systems for organizations of all sizes.",
+        "service_4": "Emergency Announcement Systems: Voice communication solutions in critical situations.",
+        "service_5": "Background Music Systems: Music broadcasting solutions for restaurants, malls, and other venues.",
+        "service_6": "Building Automation: Automatic management of climate, lighting, and security systems."
+      },
+      "values": {
+        "title": "Values",
+        "value_1": "Quality: We adhere to high-quality standards in all the products and services we offer.",
+        "value_2": "Reliability: We provide reliable and sustainable solutions to every client.",
+        "value_3": "Technological Innovation: We constantly utilize the latest technologies to provide modern and efficient solutions.",
+        "value_4": "Customer Satisfaction: We manage our work with personalized approaches that meet the needs of our clients."
+      }
+    }
+  },
+
+  "UnderConstruction": {
+    "title": "Website Under Maintenance",
+    "description": "Hello! Our website is currently undergoing improvements. We will be back soon with a better experience for you.",
+    "contact_info": "Contact: If you need to reach us urgently, you can contact us via the following means:",
+    "thanks": "Thank you for your patience!"
   }
 }

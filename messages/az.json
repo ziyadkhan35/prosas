@@ -127,5 +127,45 @@
     "application_placeholder": "Sizə iş təklifim var.",
     "send": "Göndər",
     "copyright": "© ProSas MMC - Bütün Hüquqlar Qorunur"
+  },
+  
+  "LocaleSwitcher": {
+    "label": "Dili dəyişdir",
+    "locale": "{locale, select, az {🇦🇿 Az.} en {🇺🇸 En.} ru {🇷🇺 Ru.} other {Bilinmir}}"
+  },
+
+  "AboutPage": {
+    "title": "Biz Kimik?",
+    "text": "ProSAS olaraq, təhlükəsizlik və texnoloji həllər sahəsində ixtisaslaşmış bir şirkətik. Biz müştərilərimizə müasir yanğın təhlükəsizliyi sistemləri, təhlükəsizlik kameraları (CCTV), şəbəkə qurğuları, fövqəladə anons sistemləri və digər innovativ həllər təqdim edirik. Məqsədimiz, hər bir müştərinin ehtiyaclarına uyğun, tamamilə fərdi yanaşma ilə təmin edərək, onların obyektlərinin və əmlaklarının təhlükəsizliyini ən yüksək səviyyədə qorumaqdır.",
+
+    "companyOverview": {
+      "mission": {
+        "title": "Missiyamız",
+        "text": "Müştərilərimiz üçün ən müasir təhlükəsizlik və texnologiya həllərini təmin edərək, onların mühitini təhlükəsiz və etibarlı saxlamaq bizim əsas missiyamızdır. Bizim əsas məqsədimiz, müştəri məmnuniyyətinə əsaslanan davamlı və etibarlı xidmətlər təklif etməkdir."
+      },
+      "services": {
+        "title": "Xidmətlərimiz",
+        "service_1": "Yanğından Mühafizə Sistemləri: Müasir və effektiv yanğınsöndürmə həlləri.",
+        "service_2": "Kamera Müşahidə Sistemləri (CCTV): 24/7 nəzarət və təhlükəsizlik.",
+        "service_3": "Şəbəkə Həlləri: İstənilən ölçüdə təşkilatlar üçün şəbəkə qurğularının layihələndirilməsi və quraşdırılması.",
+        "service_4": "Fövqəladə Anons Sistemləri: Kritik hallarda səsli kommunikasiya həlləri.",
+        "service_5": "Fon Musiqi Sistemləri: Restoranlar, ticarət mərkəzləri və digər obyektlər üçün musiqi yayım həlləri.",
+        "service_6": "Bina Avtomatlaşdırılması: İqlim, işıqlandırma və təhlükəsizlik sistemlərinin avtomatik idarə edilməsi."
+      },
+      "values": {
+        "title": "Dəyərlərimiz",
+        "value_1": "Keyfiyyət: Təqdim etdiyimiz bütün məhsul və xidmətlərdə yüksək keyfiyyət standartlarına sadiqik.",
+        "value_2": "Etibarlılıq: Hər bir müştərimizə etibarlı və davamlı həllər təklif edirik.",
+        "value_3": "Texnoloji İnnovasiya: Biz daim ən yeni texnologiyalardan istifadə edərək, müasir və effektiv həllər təmin edirik.",
+        "value_4": "Müştəri Məmnuniyyəti: Müştərilərimizin ehtiyaclarını qarşılayan fərdi yanaşmalarla işlərimizi idarə edirik."
+      }
+    }
+  },
+
+  "UnderConstruction": {
+    "title": "Sayt Təmir Altındadır",
+    "description": "Salam! Hal-hazırda saytımızda təkmilləşdirmə işləri aparılır. Tezliklə daha yaxşı təcrübə ilə qarşınızda olacağıq.",
+    "contact_info": "Əlaqə: Əgər təcili olaraq bizə müraciət etmək istəyirsinizsə, aşağıdakı vasitələrlə bizimlə əlaqə saxlaya bilərsiniz:",
+    "thanks": "Səbiriniz üçün təşəkkür edirik!"
   }
 }

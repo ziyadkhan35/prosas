@@ -1,17 +1,25 @@
-import Link from 'next/link'
-import { usePathname } from 'next/navigation';
-import React, { useEffect, useState } from 'react'
+import clsx from 'clsx';
+import {useSelectedLayoutSegment} from 'next/navigation';
+import {ComponentProps} from 'react';
+import {Link, Pathnames} from '@/i18n/routing';
 
-const NavLink = ({text, link}: {text: string, link: string}) => {
+export default function NavigationLink<Pathname extends Pathnames>({
+  href,
+  ...rest
+}: ComponentProps<typeof Link<Pathname>>) {
+  const selectedLayoutSegment = useSelectedLayoutSegment();
+  const pathname = selectedLayoutSegment ? `/${selectedLayoutSegment}` : '/';
+  const isActive = pathname === href;
 
   return (
-    // Navbar Link
-    <div className=''>
-      <Link className='font-[600] tracking-wide lg:text-lg text-cloud-1 hover:text-primary hover:border-b-2 border-b-primary px-1 py-3 duration-100 capitalize' href={link}>
-        {text}
-      </Link>
-    </div>
-  )
+    <Link
+      aria-current={isActive ? 'page' : undefined}
+      className={clsx(
+        'inline-block px-2 py-3 transition-colors tracking-wide lg:text-lg capitalize',
+        isActive ? 'text-primary font-[600]' : ' text-cloud-1 hover:text-primary'
+      )}
+      href={href}
+      {...rest}
+    />
+  );
 }
-
-export default NavLink
