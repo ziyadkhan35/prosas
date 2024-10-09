@@ -24,7 +24,7 @@ const OurProjects = () => {
 
   return (
     // Project section for main page
-    <div className='relative flex flex-col gap-6 bg-primary pb-52 sm:pb-56 pt-10 sm:ps-4 md:ps-16 w-full mb-36'> 
+    <div className='relative flex flex-col gap-6 bg-primary/90 pb-52 sm:pb-56 pt-10 sm:ps-4 md:ps-16 w-full mb-36'> 
       {/* Title */}
       <div className='flex items-center gap-2 ms-4 sm:ms-0'>
         <div className='bg-cloud-1 h-[0.10rem] w-12'></div>

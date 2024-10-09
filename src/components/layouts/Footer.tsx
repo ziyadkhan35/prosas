@@ -16,7 +16,7 @@ const Footer = () => {
     const n = useTranslations('Navigation')
 
   return (
-    <div className='flex flex-col gap-3 bg-primary py-5 lg:py-6 px-3 sm:px-5 md:px-10 xl:px-20' id='footer'>
+    <div className='flex flex-col gap-3 py-5 lg:py-6 px-3 sm:px-5 md:px-10 xl:px-20 bg-primary/40 border-t border-gray-500' id='footer'>
         {/* Title and logo */}
         <div className='flex justify-between'>
             {/* Title */}
