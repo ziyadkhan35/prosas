@@ -53,11 +53,10 @@ const Footer = () => {
                 <h3 className=''>{t('quick_links')}</h3>
                 {/* Links */}
                 <div className='flex flex-col gap-2'>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#main'}>{n('home')}</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#about'}>{n('about')}</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#projects'}>{n('projects')}</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#services'}>{n('services')}</Link></div>
-                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'#footer'}>{n('contact')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/'}>{n('home')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/about'}>{n('about')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/projects'}>{n('projects')}</Link></div>
+                    <div className='flex items-center'><MdKeyboardArrowRight /><Link href={'/contact'}>{n('contact')}</Link></div>
                 </div>
             </section>
 
