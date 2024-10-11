@@ -101,7 +101,7 @@ const Hero = () => {
     },
   ]
 
-  // For slider arrow buttons
+  // Arrow buttons for slider 
   const scrollPrev = useCallback(() => {
     if (emblaApi) emblaApi.scrollPrev()
   }, [emblaApi])
