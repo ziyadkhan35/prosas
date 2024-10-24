@@ -1,9 +1,34 @@
-# *
+# General sitemap information
+Sitemap: https://www.prosas.az/sitemap.xml
+
+# Allow all user agents (search engines) to access everything
 User-agent: *
 Allow: /
 
-# Host
-Host: https://prosas.az
+# Disallow access to specific areas (optional examples)
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
 
-# Sitemaps
-Sitemap: https://prosas.az/sitemap.xml
+# Prevent search engines from indexing the "private" folder
+Disallow: /private/
+
+# Blocking specific files or extensions
+Disallow: /*.pdf$
+
+# Limiting crawl delay for search engines (optional, varies by agent)
+# Crawl-delay: 10
+
+# Additional specific instructions for different user agents
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Disallow image indexing for Googlebot (if needed)
+User-agent: Googlebot-Image
+Disallow: /
+
+# Blocking specific parameters in URLs (optional)
+Disallow: /*?sessionid=
