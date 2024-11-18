@@ -19,7 +19,7 @@ const Hero = () => {
       title: t('title_1'),
       paragraph: t('paragraph_1'),
       button: t('button_1'),
-      image: '/hero-backgrounds/backgrounds/background1.jpg',
+      image: '/hero-backgrounds/backgrounds/background1.webp',
       blurData: '/hero-backgrounds/blurDatas/blurData4.jpg',
       news: {
         news_1 : t('news_1_1'),
