@@ -3,7 +3,7 @@ module.exports = {
     siteUrl: 'https://prosas.az',
     generateRobotsTxt: true,
     sitemapSize: 7000,
-    changefreq: 'weekly',
+    changefreq: 'daily',
     priority: 0.7,
     exclude: ['/admin/*'],
     alternateRefs: [
