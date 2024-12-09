@@ -1,108 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
-                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    
-    <!-- Home Page (EN) -->
-    <url>
-        <loc>https://www.prosas.az/en</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="az" href="https://www.prosas.az/az" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru" />
-    </url>
-
-    <!-- About Page (EN) -->
-    <url>
-        <loc>https://www.prosas.az/en/about</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="az" href="https://www.prosas.az/az/haqqinda" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru/o-nas" />
-    </url>
-
-    <!-- Projects Page (EN) -->
-    <url>
-        <loc>https://www.prosas.az/en/projects</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="az" href="https://www.prosas.az/az/layiheler" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru/proyekty" />
-    </url>
-
-    <!-- Home Page (AZ) -->
-    <url>
-        <loc>https://www.prosas.az/az</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru" />
-    </url>
-
-    <!-- About Page (AZ) -->
-    <url>
-        <loc>https://www.prosas.az/az/haqqinda</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en/about" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru/o-nas" />
-    </url>
-
-    <!-- Projects Page (AZ) -->
-    <url>
-        <loc>https://www.prosas.az/az/layiheler</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en/projects" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru/proyekty" />
-    </url>
-
-    <!-- Contact Page (AZ) -->
-    <url>
-        <loc>https://www.prosas.az/az/elaqe</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en/contact" />
-        <xhtml:link rel="alternate" hreflang="ru" href="https://www.prosas.az/ru/kontakty" />
-    </url>
-
-    <!-- Home Page (RU) -->
-    <url>
-        <loc>https://www.prosas.az/ru</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en" />
-        <xhtml:link rel="alternate" hreflang="az" href="https://www.prosas.az/az" />
-    </url>
-
-    <!-- About Page (RU) -->
-    <url>
-        <loc>https://www.prosas.az/ru/o-nas</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en/about" />
-        <xhtml:link rel="alternate" hreflang="az" href="https://www.prosas.az/az/haqqinda" />
-    </url>
-
-    <!-- Projects Page (RU) -->
-    <url>
-        <loc>https://www.prosas.az/ru/proyekty</loc>
-        <lastmod>2024-10-25</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="en" href="https://www.prosas.az/en/projects" />
-        <xhtml:link rel="alternate" hreflang="az" href="https://www.prosas.az/az/layiheler" />
-    </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.prosas.az/en</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/en/about</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/en/projects</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/az</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/az/haqqinda</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/az/layiheler</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/az/elaqe</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/ru</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/ru/o-nas</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.prosas.az/ru/proyekty</loc>
+    <lastmod>2024-12-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
