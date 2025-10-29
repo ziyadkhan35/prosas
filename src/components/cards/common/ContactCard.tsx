@@ -17,7 +17,7 @@ const ContactCard = () => {
         <h2 className='text-xl sm:text-2xl md:text-3xl lg:text-5xl'>{t('contact_us')}</h2>
         <div className='flex gap-3 items-center'>
           <div className='p-2 bg-cloud-1 text-primary rounded-full'><FaPhoneVolume /></div>
-          <p><a href="tel:+994502053527">+994 (50) 205 3527</a></p>
+          <p><a href="tel:+994502053527">+994 (70) 205 3527</a></p>
         </div>
       </div>
     </div>
