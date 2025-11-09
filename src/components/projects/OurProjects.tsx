@@ -6,6 +6,19 @@ import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import { useTranslations } from 'next-intl'
 
+const projectImages = [
+  '/projects/bilgah-beach-hotel.jpg',
+  '/projects/intourist-hotel-baku.jpg',
+  '/projects/mariott-hotel-boulevard.jpg',
+  '/projects/cresent-mall.jpg',
+  '/projects/port-baku-mall.jpg',
+  '/projects/jumeirah-bilgah-beach.jpg',
+  '/projects/jumeirah-bilgah-beach.jpg',
+  '/projects/download.jpeg',
+  '/projects/unnamed.jpg',
+  '/projects/unnamed.jpg',
+]
+
 const OurProjects = () => {
   
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()])
@@ -24,7 +37,7 @@ const OurProjects = () => {
 
   return (
     // Project section for main page
-    <div className='relative flex flex-col gap-6 bg-primary/90 pb-52 sm:pb-56 pt-10 sm:ps-4 md:ps-16 w-full mb-36'> 
+    <div className='relative flex flex-col gap-6 bg-primary/90 pb-4 sm:pb-5 pt-10 sm:ps-4 md:ps-16 w-full mb-36'> 
       {/* Title */}
       <div className='flex items-center gap-2 ms-4 sm:ms-0'>
         <div className='bg-cloud-1 h-[0.10rem] w-12'></div>
@@ -40,18 +53,26 @@ const OurProjects = () => {
       </div>
 
       {/* Project gallery with embla carousel*/}
-      <div className='embla absolute bottom-[-25%] sm:bottom-[-35%] overflow-hidden px-2 sm:px-6'>
-        <div className='embla__viewport' ref={emblaRef}>
-          <div className='embla__container flex'>
-            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/bilgah-beach-hotel.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/intourist-hotel-baku.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/mariott-hotel-boulevard.jpg'} width={400} height={300} alt='picture of project'/>
-            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/cresent-mall.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/port-baku-mall.jpg'} width={400} height={300} alt='picture of project' />
-            <Image className='rounded lg:rounded-xl object-cover mr-4 sm:mr-8 embla__slide' src={'/projects/jumeirah-bilgah-beach.jpg'} width={400} height={300} alt='picture of project'/>
+      <div className="embla relative bottom-[-25%] sm:bottom-[-35%] overflow-hidden px-2 sm:px-6">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container flex">
+            {projectImages.map((src, i) => (
+              <div
+                key={i}
+                className="embla__slide relative flex-shrink-0 w-[300px] sm:w-[400px] h-[220px] sm:h-[300px] mr-4 sm:mr-8"
+              >
+                <Image
+                  src={src}
+                  alt="project image"
+                  fill
+                  className="rounded-lg lg:rounded-xl object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
 
     </div>
   )
