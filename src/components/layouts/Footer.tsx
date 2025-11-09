@@ -22,7 +22,7 @@ const Footer = () => {
             {/* Title */}
             <h2 className='mb-6 mt-2'>{t('title')}</h2>
             {/* Logo */}
-            <Image src={'/logo.png'} width={45} height={45} alt='logo' />
+            <Image className='object-cover w-[65px]' src={'/logo.png'} width={45} height={45} alt='logo' />
         </div>
 
         {/* Contains Information Quick Links and Write to Us section */}

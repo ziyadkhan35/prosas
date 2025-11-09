@@ -48,11 +48,11 @@ const Header = () => {
         {/* Logo */}
         <Link href={'/'}>
           <Image
-            className='w-[50px] h-auto'
+            className='w-[75px] h-auto'
             src="/logo.png"
             alt="ProSAS Logo"
-            width={500}
-            height={500}
+            width={2000}
+            height={2000}
             priority
           />
         </Link>
