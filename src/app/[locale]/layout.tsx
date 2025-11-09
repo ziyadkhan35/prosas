@@ -5,6 +5,7 @@ import Header from "@/components/layouts/Header";
 import Footer from "@/components/layouts/Footer";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://prosas.az'),
@@ -74,6 +75,7 @@ export default async function RootLayout({
           </header>
           
           {children} 
+          <Analytics />
                  
           <footer>
             <Footer />
