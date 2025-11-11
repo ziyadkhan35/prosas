@@ -13,10 +13,7 @@ const projectImages = [
   '/projects/cresent-mall.jpg',
   '/projects/port-baku-mall.jpg',
   '/projects/jumeirah-bilgah-beach.jpg',
-  '/projects/jumeirah-bilgah-beach.jpg',
-  '/projects/download.jpeg',
-  '/projects/unnamed.jpg',
-  '/projects/unnamed.jpg',
+  '/projects/ganja-olympic-sports-complex.jpg',
 ]
 
 const OurProjects = () => {
