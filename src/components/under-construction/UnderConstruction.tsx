@@ -16,7 +16,7 @@ const UnderConstruction = () => {
 
             <div className='flex flex-col gap-3'>
                 <p className=' text-cloud-2'>{t('contact_info')}</p>
-                <p className='text-cyan-600'><a href="tel:+994502053527">+994 (50) 205 35 27</a></p>
+                <p className='text-cyan-600'><a href="tel:+994502053527">+994 (70) 205 35 27</a></p>
                 <p className='text-cyan-600'><a href="mailto:info@prosas.az">info@prosas.az</a></p>
                 <p className='font-shantell_sans mt-6'>{t('thanks')}</p>
             </div>
