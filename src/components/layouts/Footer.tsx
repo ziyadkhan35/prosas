@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className='flex flex-col gap-2'>
                         <IconAndText Icon={FaLocationDot} text='ProSAS MMC' />
                         <IconAndText Icon={GrMail} text='info@prosas.az' />
-                        <IconAndText Icon={MdLocalPhone} text='+994 (50) 205 35 27' />
+                        <IconAndText Icon={MdLocalPhone} text='+994 (70) 205 35 27' />
                     </div>
                 </div>
                 {/* Social media */}
