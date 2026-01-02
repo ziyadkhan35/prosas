@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { lora, shantell_sans, open_sans } from "../fonts";
 import "./globals.css";
 import Header from "@/components/layouts/Header";
@@ -67,6 +68,22 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} className={`${open_sans.variable} ${lora.variable} ${shantell_sans.variable}`}>
+
+      {/* Google Analytics 4 */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-R72QQFFTRF"
+        strategy="afterInteractive"
+      />
+    
+      <Script id="ga4" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-R72QQFFTRF');
+        `}
+      </Script>
+      
       <body className={open_sans.className}>
         <NextIntlClientProvider messages={messages}>
           <header>
